@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <TextView
+        android:id="@+id/identifier"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="السوال الأول"
+        android:textColor="@color/darkgreytext"
+        android:textSize="30sp"
+
+
+        android:textStyle="bold"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintWidth_percent="0.4" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:gravity="center"
+        android:text="شرح الاختبارشرح الاختبارح الاختبارشرح الاختبارشرح الاختبارشرح الاختبارشرح الاختبارشرح الاختبارح الاختبارشرح الاختبارشرح الاختبارشرح الاختبارشرح الاختبارشرح الاختبارح الاختبار"
+        android:lines="3"
+
+        android:textColor="@color/darkgreytext"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/identifier"
+        app:layout_constraintWidth_percent="0.8" />
+
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/btnSubmitAnswer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+
+        android:background="@drawable/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerAnswers"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text=" 1 : 52"
+        android:textDirection="ltr"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toEndOf="@+id/identifier"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintWidth_percent="0.15"
+        android:background="@color/darkgreytext"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerAnswers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question"
+        app:layout_constraintWidth_percent="0.85" />
+
+
+</android.support.constraint.ConstraintLayout>

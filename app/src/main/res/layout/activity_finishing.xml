@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FinishingActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline1"
+
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12"
+        />
+
+    <ImageView
+        android:id="@+id/iv_company_logo"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.13"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline1"
+        app:layout_constraintWidth_percent="0.8"
+        app:srcCompat="@drawable/hay3rd" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27"
+        />
+
+    <ImageView
+        android:id="@+id/iv"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline2"
+        app:layout_constraintWidth_percent="0.7"
+        app:srcCompat="@drawable/logo" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6"
+        />
+    <TextView
+        android:id="@+id/tvmoq"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="نشكرك على الاختبار"
+        android:textColor="@color/darkgreytext"
+
+
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline3"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7"
+        />
+
+    <TextView
+        android:id="@+id/tvdes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:gravity="center"
+        android:text="مقدمة عن المشروعمقدمة عن المشروعمقدمة عن المشروعمقدمة عن المشروعمقدمة عن المشروعمقدمة عن المشروع"
+        android:textColor="@color/darkgreytext"
+        android:lines="3"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline4"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85"
+        />
+    <TextView
+        android:id="@+id/tvem"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:gravity="center"
+        android:textColor="@color/orangetext"
+        android:text="سيتم ارسال رسالة الى بريدك الالكتروني "
+        android:lines="3"
+android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvdes"
+        app:layout_constraintWidth_percent="0.4" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
